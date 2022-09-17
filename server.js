@@ -32,6 +32,9 @@ app.use(morgan('tiny'))
 app.use('/', appRoutes)
 app.use('/auth', authRoutes)
 
+app.get('/', (req, res) => {
+  res.json('Welcome to scraper backend')
+})
 
 app.listen(PORT, ()=>{
     console.log("We are running on ", PORT)
