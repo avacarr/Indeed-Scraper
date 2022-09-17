@@ -72,12 +72,12 @@ User = {
     - As an unlogged-in user, I would like to be able to browse all the jobs.
     - As an unlogged-in user, I would like to be able to set the search parameters.
     - As an unlogged-in user, I would like to have the option to login/signup on any page.
-    - As a logged-in user, I would like to be able to save jobs.
+    - As a logged-in user, I would like to be able to save searches.
     - As a logged-in user, I would like to have a user page that displays all saves.
     - As a logged-in user, I would like to have the option to see my previous searches.
 
 
-### Wireframe
+### Photos
 
 #### Home View
 ![Screen Shot 2022-09-17 at 6 40 16 AM](https://user-images.githubusercontent.com/102195632/190859927-20d79f92-896e-4681-812d-27d2feff605a.png)
