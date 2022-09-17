@@ -10,12 +10,8 @@
 ### MVP
     - Home Page
       - Welcoming and showing login/signup button while start searching jobs button.
-    - User Page
-      - Shows all jobs saved, and past search history.
-    - Show All Page
-      - Resource type shows all data and allows for multiple page scrolls.
-    - Show Page
-      - Shows all data pertinent to the job selected.
+    - Search Page
+      - Shows all searches saved, and allows you to filter them.
 
 
 ### Stretch Goals
@@ -26,16 +22,18 @@
 
 ### Tech Stack
 
-#### Front-End
+##### Front-End
     - React
+    - Axios
     - HTML
     - CSS
     - JavaScript
-#### Back-End
+    
+##### Back-End
     - Express
     - Morgan
-#### Back-End
     - MongoDB
+    - Puppeteer
 
 
 ### List of Mongoose models and their properties
@@ -46,21 +44,25 @@ User = {
   last_name: String,
   email: String,
   search: [{
-    type: String,
-    value: String
+    search: String.
+    location: String,
+    postDate: String,
+    primaryFilter: String,
+    url: String
   }],
   search_history: [{
-    type: String,
-    value: String
+    search: String.
+    location: String,
+    postDate: String,
+    primaryFilter: String,
+    url: String
   }],
   saved: [{
-    title: String,
-    company: String,
+    search: String.
     location: String,
-    summary:  String,
-    url: String,
     postDate: String,
-    salary: String,
+    primaryFilter: String,
+    url: String
   }],
 }
 ```
@@ -78,16 +80,11 @@ User = {
 ### Wireframe
 
 #### Home View
-   ![Home](https://user-images.githubusercontent.com/102195632/188215676-f2c31e4c-912c-4cbd-93a6-4569d6aa04b6.png)
+![Screen Shot 2022-09-17 at 6 40 16 AM](https://user-images.githubusercontent.com/102195632/190859927-20d79f92-896e-4681-812d-27d2feff605a.png)
 
 
-#### User View
-  ![User](https://user-images.githubusercontent.com/102195632/188217221-28d74a82-731d-4da1-bd98-a49e2dfeaf06.png)
+#### Search View
+![Screen Shot 2022-09-17 at 6 39 57 AM](https://user-images.githubusercontent.com/102195632/190859930-aa63ee31-3704-43aa-a89c-9f09c3203c8c.png)
 
-#### Show All View
-  ![Show All](https://user-images.githubusercontent.com/102195632/188217951-2c90d7cc-db36-410b-aada-4b6f40762c99.png)
-
-#### Show View
-  ![Show](https://user-images.githubusercontent.com/102195632/188218381-6d677721-9830-47f4-8fd7-dbc36097007f.png)
 
   
